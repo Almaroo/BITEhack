@@ -1,0 +1,121 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Android101";
+  src: url("./fonts/Android101.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Android101.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/Android101.otf") format("opentype"),
+    /* Open Type Font */ url("./fonts/Android101.svg") format("svg"),
+    /* Legacy iOS */ url("./fonts/Android101.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./fonts/Android101.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/Android101.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  z-index: -10;
+}
+
+.landing {
+  position: relative;
+  height: 100%;
+  font-family: Android101, Helvetica, sans-serif;
+  background-color: rgb(20, 26, 40);
+  z-index: -10;
+  overflow: hidden;
+}
+
+.landing__hexagons {
+  width: 110%;
+  display: inline-block;
+  margin-left: -10%;
+  animation: blink 2.5s infinite alternate;
+}
+
+.landing__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15rem;
+  color: rgba(176, 208, 224, 0.8);
+  text-shadow: 0 0 2rem rgba(176, 208, 224, 0.8);
+  z-index: 1;
+}
+
+.landing__title::after,
+.landing__title::before {
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-size: 15rem;
+  content: "HACKATHON";
+}
+
+.landing__title::before {
+  transform: translate(-0.75rem, -0.75rem);
+  color: white;
+  z-index: 2;
+}
+.landing__title::after {
+  transform: translate(0.5rem, 0.5rem);
+  color: rgba(201, 76, 139, 0.8);
+  text-shadow: 0 0 2rem rgba(201, 76, 139, 0.8);
+  z-index: -1;
+}
+
+.landing__countdown {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  color: rgba(176, 208, 224, 0.8);
+  text-shadow: 0 0 2rem rgba(176, 208, 224, 0.8);
+  z-index: 1;
+}
+
+/*.landing__countdown::after,
+.landing__countdown::before {
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-size: 6rem;
+  content: attr(time-left);
+}
+
+.landing__countdown::before {
+  transform: translate(-0.375rem, -0.375rem);
+  color: white;
+  z-index: 2;
+}
+
+.landing__countdown::after {
+  transform: translate(0.25rem, 0.25rem);
+  color: rgba(201, 76, 139, 0.8);
+  text-shadow: 0 0 2rem rgba(201, 76, 139, 0.8);
+  z-index: -1;
+}*/
+
+@keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
