@@ -24,6 +24,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -192,10 +193,42 @@ body {
 
 .text_block
 {
-  padding: 3rem 0;
+  padding: 3.5rem 0;
 }
 
 .text_block--emphasis
 {
   font-weight: bold;
+}
+
+/*BLINDING LIGHTS*/
+.blinding_lights
+{
+  position: fixed;
+  height: 100vh;
+  z-index: -9;
+}
+
+.light--left
+{
+  top: 50%;
+  position: absolute;
+  transform: translate(-70%, -50%);
+  height: 150vh;
+  width: 50vw;
+  background-color:rgba(176, 208, 224, 0.8);
+  border-radius: 50%;
+  filter: url(#blurFilter);
+}
+
+.light--right
+{
+  top: 50%;
+  position: absolute;
+  transform: translate(170%, -50%);
+  height: 150vh;
+  width: 50vw;
+  background-color: rgba(201, 76, 139, 0.8);
+  border-radius: 50%;
+  filter: url(#blurFilter);
 }

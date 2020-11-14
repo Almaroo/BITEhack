@@ -4,6 +4,26 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
   </head>
   <body>
+    <div class="blinding_lights">
+      <svg>
+        <defs>
+          <filter 
+            id="blurFilter"
+            x="-20%"
+            y="-20%"
+            width="150%"
+            height="120%">
+          
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="55">
+            </feGaussianBlur>
+          </filter>
+        </defs>
+      </svg>
+      <div class="light--left"></div>
+      <div class="light--right"></div>
+    </div>
     <section class="landing">
       <img class="landing__hexagons" src="./res/images/hexagons.svg" />
       <div class="landing__box center_abs">

@@ -11,9 +11,9 @@
     let hoursLeft = parseInt((diffInSeconds / (60 * 60)) % 24);
     let daysLeft = parseInt(diffInSeconds / (60 * 60 * 24));
 
-    let dateString = `${formatInt(daysLeft)}D ${formatInt(
+    let dateString = `${formatInt(daysLeft)}:${formatInt(
       hoursLeft
-    )}H ${formatInt(minutesLeft)}M ${formatInt(secondsLeft)}S`;
+    )}:${formatInt(minutesLeft)}:${formatInt(secondsLeft)}`;
     countdown.setAttribute("time-left", dateString);
     countdown.textContent = dateString;
   };
