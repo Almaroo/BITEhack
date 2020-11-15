@@ -46,6 +46,9 @@ body {
   margin: auto
 }
 
+.f_box{
+  display: flex;
+}
 
 /*LANDING PAGE*/
 
@@ -176,30 +179,11 @@ body {
 
 
 .description{
-  height: 100vh;
-  column-count: 2;
+  padding: 30rem 0;
   color: white;
+
 }
 
-.description__part{
-  padding: 4rem 12rem;
-  font-size: 2em;
-  height: 100%;
-}
-
-.description__logo{
-  width: 100%;
-}
-
-.text_block
-{
-  padding: 3.5rem 0;
-}
-
-.text_block--emphasis
-{
-  font-weight: bold;
-}
 
 /*BLINDING LIGHTS*/
 .blinding_lights
@@ -219,6 +203,10 @@ body {
   background-color:rgba(176, 208, 224, 0.8);
   border-radius: 50%;
   filter: url(#blurFilter);
+  animation: lightLeftAnimation 20s ease-in-out infinite forwards;
+}
+.light--left:nth-child(even){
+  animation: lightLeftAnimation 10s ease-in-out infinite backwards;
 }
 
 .light--right
@@ -231,4 +219,39 @@ body {
   background-color: rgba(201, 76, 139, 0.8);
   border-radius: 50%;
   filter: url(#blurFilter);
+  animation: lightRightAnimation 10s ease-in-out infinite forwards;
+}
+.light--right:nth-child(even){
+  animation: lightRightAnimation 20s ease-in-out infinite backwards;
+}
+
+
+@keyframes lightLeftAnimation{
+  0%{
+
+  }
+  25%{
+    transform: translate(-60%, -100%);
+  }
+  50%{
+    transform: translate(-70%, -50%);
+  }
+  75%{
+    transform: translate(-60%, 0%);
+  }
+}
+
+@keyframes lightRightAnimation{
+  0%{
+
+  }
+  25%{
+    transform: translate(150%, -0%);;
+  }
+  50%{
+    transform: translate(150%, -50%);;
+  }
+  75%{
+    transform: translate(150%, -100%);;
+  }
 }
