@@ -27,6 +27,7 @@
 	--color-blue-secondary: rgba(123, 145, 156, 0.8);
 	--color-magenta-main: rgba(201, 76, 139, 0.8);
 	--color-magenta-secondary: rgba(140, 53, 97, 0.8);
+<<<<<<< HEAD
 }
 
 html {
@@ -37,14 +38,39 @@ html {
 body {
 	background-color: rgb(20, 26, 40);
 	z-index: -10;
+=======
+	--color-backgrounnd: #080a16;
 }
 
+html {
+	font-size: 100%;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 2559px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+
+@media screen and (max-width: 1439px) {
+	html {
+		font-size: 50%;
+	}
+>>>>>>> develop
+}
+
+body {
+	background-color: var(--color-backgrounnd);
+	z-index: -10;
+}
 /*UTILS*/
 .center_abs {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+<<<<<<< HEAD
 }
 
 .center {
@@ -57,6 +83,20 @@ body {
 	align-items: stretch;
 }
 
+=======
+}
+
+.center {
+	margin: auto;
+}
+
+.d_flex {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: stretch;
+}
+
+>>>>>>> develop
 .d_grid {
 	display: grid;
 	justify-items: center;
@@ -69,6 +109,7 @@ body {
 	position: relative;
 	height: 100vh;
 	font-family: Android101, Helvetica, sans-serif;
+<<<<<<< HEAD
 
 	overflow: hidden;
 }
@@ -78,6 +119,10 @@ body {
 	display: inline-block;
 	margin-left: -10%;
 	animation: blink 2.5s infinite alternate;
+=======
+
+	overflow: hidden;
+>>>>>>> develop
 }
 
 .landing__box {
@@ -189,6 +234,7 @@ body {
 	}
 }
 
+<<<<<<< HEAD
 .description {
 	padding: 30rem 0;
 	color: white;
@@ -203,6 +249,43 @@ body {
 	break-inside: avoid-column;
 }
 
+=======
+/*DESCRIPTION*/
+
+.description {
+	display: flex;
+	align-items: center;
+	position: relative;
+	height: 100vh;
+	color: white;
+}
+
+/*APPLY*/
+
+.apply {
+	color: white;
+}
+
+.apply__background {
+	position: relative;
+	height: 100vh;
+	z-index: -9;
+	background-image: url(res/images/bh_robot_background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+/**/
+
+.sponsors {
+	padding: 10rem 0;
+}
+
+.sponsors__grid {
+	column-count: 2;
+	break-inside: avoid-column;
+}
+
+>>>>>>> develop
 .sponsors__panel {
 	margin: auto;
 	width: 80%;
@@ -233,7 +316,11 @@ body {
 
 .sponsors__sponsor--main {
 	color: white;
+<<<<<<< HEAD
 	text-align: center;
+=======
+	text-align: left;
+>>>>>>> develop
 	font-weight: bold;
 	font-size: 4rem;
 	background-image: linear-gradient(
@@ -265,7 +352,11 @@ body {
 .blinding_lights {
 	position: fixed;
 	height: 100vh;
+<<<<<<< HEAD
 	z-index: -9;
+=======
+	z-index: -1;
+>>>>>>> develop
 }
 
 .light--left {
@@ -354,4 +445,61 @@ body {
 .feature:hover {
 	transform: scale(1.1);
 	background-color: #ffffff33;
+<<<<<<< HEAD
+=======
+}
+
+.btn {
+	display: block;
+	margin: 2rem auto;
+}
+
+.btn--apply {
+	margin: -20rem auto 0 auto;
+	position: relative;
+	font-family: Android101, Helvetica, sans-serif;
+	background-color: transparent;
+	border: none;
+	font-size: 10rem;
+	color: var(--color-blue-main);
+	transition: 0.3s;
+}
+
+.btn--apply::before,
+.btn--apply::after {
+	position: absolute;
+	font-family: Android101, Helvetica, sans-serif;
+	top: 0;
+	left: 0;
+	font-size: 10rem;
+	opacity: 0;
+	content: "APLIKUJ TERAZ";
+	transition: 0.3s;
+}
+
+.btn--apply::before {
+	color: white;
+	z-index: 2;
+}
+.btn--apply::after {
+	color: var(--color-magenta-main);
+	text-shadow: 0 0 1.6667rem var(--color-magenta-main);
+	z-index: -1;
+}
+
+.btn--apply:hover {
+	cursor: pointer;
+	text-shadow: 0 0 1.6667rem var(--color-blue-main);
+}
+
+.btn--apply:hover::after {
+	transform: translate(0.3rem, 0.3rem);
+	text-shadow: 0 0 1.6667rem var(--color-magenta-main);
+	opacity: 1;
+}
+
+.btn--apply:hover::before {
+	transform: translate(-0.5rem, -0.5rem);
+	opacity: 1;
+>>>>>>> develop
 }
