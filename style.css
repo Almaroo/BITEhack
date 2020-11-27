@@ -295,10 +295,9 @@ body::-webkit-scrollbar {
 /* FOOER */
 
 .footer {
-<<<<<<< HEAD
-=======
+	position: relative;
 	height: 25vh;
->>>>>>> develop
+	background-color: var(--color-backgrounnd);
 }
 
 /*BLINDING LIGHTS*/
