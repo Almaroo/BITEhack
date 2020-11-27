@@ -295,6 +295,7 @@ body::-webkit-scrollbar {
 /* FOOER */
 
 .footer {
+	height: 25vh;
 }
 
 /*BLINDING LIGHTS*/
