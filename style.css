@@ -51,6 +51,11 @@ body {
 	background-color: var(--color-backgrounnd);
 	z-index: -10;
 }
+
+body::-webkit-scrollbar {
+	width: 0;
+}
+
 /*UTILS*/
 .center_abs {
 	position: absolute;
@@ -232,7 +237,7 @@ body {
 .sponsors__panel {
 	margin: auto;
 	width: 80%;
-	background-color: #ffffffaa;
+	background-color: #ffffff11;
 	border-radius: 10px;
 	padding: 5rem;
 }
@@ -285,6 +290,11 @@ body {
 	margin: 2rem auto;
 	height: 200px;
 	width: 200px;
+}
+
+/* FOOER */
+
+.footer {
 }
 
 /*BLINDING LIGHTS*/
@@ -379,7 +389,7 @@ body {
 
 .feature:hover {
 	transform: scale(1.1);
-	background-color: #ffffff33;
+	background-color: #ffffff11;
 }
 
 .btn {
@@ -434,4 +444,48 @@ body {
 .btn--apply:hover::before {
 	transform: translate(-0.5rem, -0.5rem);
 	opacity: 1;
+}
+
+.logo {
+	display: block;
+	margin: 10rem auto;
+}
+
+.logo--main {
+	max-width: 50%;
+}
+
+.scroll-indicator {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	color: white;
+	font-size: 2rem;
+	position: sticky;
+	width: 5vh;
+
+	bottom: 25vh;
+	left: 2vw;
+}
+
+.scroll-indicator__icons-box {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.scroll-indicator i {
+	padding: 1rem 0;
+}
+
+.scroll-indicator a:visited,
+.scroll-indicator a:link {
+	color: white;
+}
+
+.scroll-indicator__text {
+	margin: auto;
+	font-family: Android101, Helvetica, sans-serif;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
 }
