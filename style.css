@@ -86,10 +86,6 @@ body::-webkit-scrollbar {
 	grid-auto-rows: 1fr;
 }
 
-a:hover {
-	transform: scale(1.1);
-}
-
 /*LANDING PAGE*/
 
 .landing {
@@ -333,6 +329,10 @@ a:hover {
 .footer__section-link:visited {
 	color: white;
 	text-decoration: none;
+}
+
+.footer a:hover {
+	transform: scale(1.1);
 }
 
 /*BLINDING LIGHTS*/
@@ -598,6 +598,10 @@ a:hover {
 	.feature:hover {
 		transform: none;
 		background-color: transparent;
+	}
+
+	.footer a:hover {
+		transform: none;
 	}
 }
 
