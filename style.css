@@ -267,12 +267,18 @@ body::-webkit-scrollbar {
 	display: block;
 	text-align: center;
 	margin: auto;
-	max-width: 40%;
+	max-width: 30%;
 }
 
 .sponsors__sponsor--secondary {
+	display: block;
 	text-align: center;
 	padding: 2rem;
+}
+
+.sponsors__sponsor--secondary-big {
+	max-width: 50%;
+	justify-self: center;
 }
 
 /* FOOTER */
