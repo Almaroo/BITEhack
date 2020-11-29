@@ -540,12 +540,32 @@ body::-webkit-scrollbar {
 		font-size: 40%;
 	}
 
+	.logo--main {
+		max-width: 80%;
+	}
+
 	.description {
 		margin: 5rem 0;
+		height: auto;
 		justify-content: center;
 		align-items: center;
 	}
+	.feature {
+		padding: 5rem;
+		max-width: 80%;
+	}
 
+	.feature__icon {
+		font-size: 15rem;
+	}
+
+	.feature__heading {
+		font-size: 8rem;
+	}
+
+	.feature__text {
+		font-size: 6rem;
+	}
 	.d_flex {
 		flex-direction: column;
 		justify-content: center;
@@ -558,30 +578,21 @@ body::-webkit-scrollbar {
 		align-items: center;
 	}
 
-	.feature:hover {
-		transform: none;
-		background-color: transparent;
-	}
-
-	.scroll-indicator {
+	.footer__section-header {
 		font-size: 5rem;
 	}
 
-	.feature {
-		padding: 5rem;
-		max-width: 80%;
+	.footer__section-content {
+		font-size: 3rem;
 	}
 
-	.feature__icon {
-		font-size: 10rem;
+	.footer__section-link {
+		font-size: 2.5rem;
 	}
 
-	.footer__section-header {
-		font-size: 4rem;
-	}
-
-	.footer__section {
-		font-size: 2rem;
+	.feature:hover {
+		transform: none;
+		background-color: transparent;
 	}
 }
 
@@ -593,9 +604,15 @@ body::-webkit-scrollbar {
 	.grid--r3 {
 		grid-template-columns: 1fr 1fr;
 	}
+
+	.btn--apply,
+	.btn--apply::after,
+	.btn--apply::before {
+		font-size: 15rem;
+	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
 	html {
 		font-size: 20%;
 	}
