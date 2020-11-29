@@ -556,15 +556,15 @@ body::-webkit-scrollbar {
 	}
 
 	.feature__icon {
-		font-size: 15rem;
+		font-size: 10rem;
 	}
 
 	.feature__heading {
-		font-size: 8rem;
+		font-size: 6rem;
 	}
 
 	.feature__text {
-		font-size: 6rem;
+		font-size: 5rem;
 	}
 	.d_flex {
 		flex-direction: column;
@@ -580,14 +580,15 @@ body::-webkit-scrollbar {
 
 	.footer__section-header {
 		font-size: 5rem;
+		font-weight: bold;
 	}
 
 	.footer__section-content {
-		font-size: 3rem;
+		font-size: 4rem;
 	}
 
 	.footer__section-link {
-		font-size: 2.5rem;
+		font-size: 4rem;
 	}
 
 	.feature:hover {
@@ -608,20 +609,19 @@ body::-webkit-scrollbar {
 	.btn--apply,
 	.btn--apply::after,
 	.btn--apply::before {
-		font-size: 15rem;
+		font-size: 12rem;
 	}
-}
-
-@media screen and (max-width: 500px) {
-	html {
-		font-size: 20%;
-	}
-
 	.blinding_lights {
 		display: none;
 	}
 
 	.scroll-indicator {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	html {
+		font-size: 20%;
 	}
 }
