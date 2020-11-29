@@ -541,6 +541,7 @@ body::-webkit-scrollbar {
 	}
 
 	.description {
+		margin: 5rem 0;
 		justify-content: center;
 		align-items: center;
 	}
@@ -597,6 +598,10 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 425px) {
 	html {
 		font-size: 20%;
+	}
+
+	.blinding_lights {
+		display: none;
 	}
 
 	.scroll-indicator {
