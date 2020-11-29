@@ -547,6 +547,8 @@ body::-webkit-scrollbar {
 
 	.d_flex {
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.footer {
@@ -566,6 +568,7 @@ body::-webkit-scrollbar {
 
 	.feature {
 		padding: 5rem;
+		max-width: 80%;
 	}
 
 	.feature__icon {
