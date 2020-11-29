@@ -597,7 +597,7 @@ body::-webkit-scrollbar {
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media all and (max-width: 900px) {
 	html {
 		font-size: 30%;
 	}
@@ -620,7 +620,7 @@ body::-webkit-scrollbar {
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 	html {
 		font-size: 20%;
 	}
