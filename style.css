@@ -129,6 +129,11 @@ body::-webkit-scrollbar {
 	z-index: -1;
 }
 
+.landing__title--na::after,
+.landing__title--na::before {
+	content: "JESZCZE CHWILKA";
+}
+
 .landing__subtitle {
 	width: -webkit-max-content;
 	position: relative;
@@ -335,6 +340,13 @@ body::-webkit-scrollbar {
 	transform: scale(1.1);
 }
 
+.not-available {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 /*BLINDING LIGHTS*/
 .blinding_lights {
 	position: fixed;
@@ -431,8 +443,10 @@ body::-webkit-scrollbar {
 }
 
 .btn {
+	text-decoration: none;
 	display: block;
 	margin: 2rem auto;
+	width: fit-content;
 }
 
 .btn--apply {

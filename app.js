@@ -1,5 +1,5 @@
 (() => {
-  const hackathonDate = new Date("December 17, 2020 00:00:00");
+  const hackathonDate = new Date("December 3, 2020 00:00:00");
   const countdown = document.querySelector(".landing__countdown");
   let dateString = "";
 
