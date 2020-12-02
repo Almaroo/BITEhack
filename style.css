@@ -23,8 +23,8 @@
 }
 
 :root {
-	--color-blue-main: rgba(176, 208, 224, 0.8);
-	--color-blue-secondary: rgba(123, 145, 156, 0.8);
+	--color-blue-main: rgba(99, 198, 217, 0.8);
+	--color-blue-secondary: rgba(79, 158, 173, 0.8);
 	--color-magenta-main: rgba(201, 76, 139, 0.8);
 	--color-magenta-secondary: rgba(140, 53, 97, 0.8);
 	--color-backgrounnd: #080a16;
