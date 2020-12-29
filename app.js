@@ -8,6 +8,7 @@
       i.toLocaleString("pl-PL", { minimumIntegerDigits: 2 });
     let diffInSeconds = Math.abs(hackathonDate - Date.now()) / 1000;
 
+    
     if(diffInSeconds > 0){
       let secondsLeft = parseInt(diffInSeconds % 60);
       let minutesLeft = parseInt((diffInSeconds / 60) % 60);
