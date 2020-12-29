@@ -19,6 +19,7 @@
       )}:${formatInt(minutesLeft)}:${formatInt(secondsLeft)}`;
     }
     else{
+      
       dateString = "OTWARTE";
     }
 
